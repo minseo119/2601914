@@ -19,3 +19,38 @@ html_code = """
 """
 
 HTML(html_code)
+
+%%html
+<div style="border:1px solid;">
+  <h1>1</h1>
+</div>
+<div style="border:1px dashed;">
+  <h2>2</h2>
+</div>
+<div style="border:1px dotted;">
+  <h3>3</h3>
+</div>
+<div style="border:1px double;">
+  <h4>4</h4>
+</div>
+<div style="border:1px groove;">
+  <h5>5</h5>
+</div>
+
+%%html
+<style>
+  .box-before {
+    color: white;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  .box-before:nth-child(1) { background-color: #00a8cc; } /* 박스1 청록색 */
+  .box-before:nth-child(2) { background-color: #006680; } /* 박스2 진한 청록색 */
+  .box-before:nth-child(3) { background-color: #12192c; } /* 박스3 남색 */
+</style>
+
+<div class="container">
+  <div class="box-before">박스1</div>
+  <div class="box-before">박스2</div>
+  <div class="box-before">박스3</div>
